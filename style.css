@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background.jpg"); /* Replace with a suitable Frutiger Aero background */
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 5px;
+    font-family: 'Arial Rounded MT Bold', 'Trebuchet MS', sans-serif; /* More rounded font */
+    background-color: #e0f2f7; /* Light blue background as fallback */
+}
+
+/* <-----card-----> */
+
+.card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.15) 100%);
+    width: 420px;
+    height: 270px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.2), /* Outer shadow */
+        inset 2px 2px 5px rgba(255, 255, 255, 0.4), /* Highlight inner shadow */
+        inset -2px -2px 5px rgba(0, 0, 0, 0.1); /* Shadow inner shadow */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.7); /* Subtle border */
+}
+
+.card h1 {
+    font-size: 35px;
+    color: #0077b3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* More pronounced text shadow */
+}
+
+.card h2 {
+    font-size: 16px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+    font-size: 12px;
+    color: #555;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* <-----search bar-----> */
+
+.search-wrapper {
+    max-width: 420px;
+    margin: 0px auto 15px auto;
+    height: 55px;
+}
+
+.search-wrapper .search-input {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.80) 100%);
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.2), /* Outer shadow */
+        inset 1px 1px 3px rgba(255, 255, 255, 0.5), /* Highlight inner shadow */
+        inset -1px -1px 3px rgba(0, 0, 0, 0.15); /* Shadow inner shadow */
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.search-input input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    background: transparent;
+}
+
+.search-input .icon {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #0077b3;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.search-input .search-box {
+    padding: 0px;
+    max-height: 280px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.search-input.active .search-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-box li{
+    list-style: none;
+    padding: 8px 12px;
+    width: 100%;
+    cursor: default;
+    border-radius: 5px; /* Slightly less rounded */
+    display: none;
+}
+
+.search-box li:hover{
+    background: #e0f2f7; /* Light blue hover */
+}
+
+.search-input.active .search-box li{
+    display: block;
+}
+
+/* <-----weather location-----> */
+
+.weather-location-wrapper{
+    color:#0077b3; /* Teal location text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* <-----condition and temp-----> */
+
+.condition-temp-wrapper{
+    color:#333; /* Darker text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.condition-temp-wrapper i{
+    font-size: 35px;
+    color: #0077b3; /* Teal icon color */
+}
+
+.condition-icon-wrapper{
+    color:#333; /* Darker text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* <-----wind & humidity-----> */
+
+.wind-humidity-wrapper{
+    color:#555; /* Slightly lighter text */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wind-humidity-wrapper i{
+    font-size: 12px;
+    color: #0077b3; /* Teal icon color */
+}
+
+
+.wind-speed-wrapper, .wind-direction-wrapper, .humidity-wrapper{
+    color:#555; /* Slightly lighter text */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
