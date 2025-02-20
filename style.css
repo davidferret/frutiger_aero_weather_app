@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("background.jpg"); /* Replace with a suitable Frutiger Aero background */
+    background-image: url("background.jpg"); 
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -13,11 +13,11 @@ body {
     align-items: center;
     height: 100vh;
     padding: 5px;
-    font-family: 'Arial Rounded MT Bold', 'Trebuchet MS', sans-serif; /* More rounded font */
-    background-color: #e0f2f7; /* Light blue background as fallback */
+    font-family: 'Arial Rounded MT Bold', 'Trebuchet MS', sans-serif; 
+    background-color: #e0f2f7;
 }
 
-/* <-----card-----> */
+/* card */
 
 .card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.15) 100%);
@@ -26,17 +26,17 @@ body {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 
-        3px 3px 6px rgba(0, 0, 0, 0.2), /* Outer shadow */
-        inset 2px 2px 5px rgba(255, 255, 255, 0.4), /* Highlight inner shadow */
-        inset -2px -2px 5px rgba(0, 0, 0, 0.1); /* Shadow inner shadow */
+        3px 3px 6px rgba(0, 0, 0, 0.2), 
+        inset 2px 2px 5px rgba(255, 255, 255, 0.4), 
+        inset -2px -2px 5px rgba(0, 0, 0, 0.1); 
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.7); /* Subtle border */
+    border: 1px solid rgba(255, 255, 255, 0.7); 
 }
 
 .card h1 {
     font-size: 35px;
     color: #0077b3;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* More pronounced text shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .card h2 {
@@ -51,7 +51,7 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* <-----search bar-----> */
+/* search bar */
 
 .search-wrapper {
     max-width: 420px;
@@ -65,9 +65,9 @@ body {
     width: 100%;
     border-radius: 25px;
     box-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.2), /* Outer shadow */
-        inset 1px 1px 3px rgba(255, 255, 255, 0.5), /* Highlight inner shadow */
-        inset -1px -1px 3px rgba(0, 0, 0, 0.15); /* Shadow inner shadow */
+        2px 2px 5px rgba(0, 0, 0, 0.2), 
+        inset 1px 1px 3px rgba(255, 255, 255, 0.5),
+        inset -1px -1px 3px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
@@ -130,20 +130,20 @@ body {
     display: block;
 }
 
-/* <-----weather location-----> */
+/* weather location */
 
 .weather-location-wrapper{
-    color:#0077b3; /* Teal location text */
+    color:#0077b3; 
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
 }
 
-/* <-----condition and temp-----> */
+/* condition and temp */
 
 .condition-temp-wrapper{
-    color:#333; /* Darker text color */
+    color:#333; 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -152,11 +152,11 @@ body {
 
 .condition-temp-wrapper i{
     font-size: 35px;
-    color: #0077b3; /* Teal icon color */
+    color: #0077b3;
 }
 
 .condition-icon-wrapper{
-    color:#333; /* Darker text color */
+    color:#333; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,10 +164,10 @@ body {
     gap: 5px;
 }
 
-/* <-----wind & humidity-----> */
+/* wind & humidity */
 
 .wind-humidity-wrapper{
-    color:#555; /* Slightly lighter text */
+    color:#555; 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -177,12 +177,12 @@ body {
 
 .wind-humidity-wrapper i{
     font-size: 12px;
-    color: #0077b3; /* Teal icon color */
+    color: #0077b3;
 }
 
 
 .wind-speed-wrapper, .wind-direction-wrapper, .humidity-wrapper{
-    color:#555; /* Slightly lighter text */
+    color:#555;
     display: flex;
     align-items: center;
     text-align: center;
